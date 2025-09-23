@@ -20,6 +20,10 @@ typing-extensions>=4.7.0
 dataclasses>=0.6  # For Python < 3.7 compatibility
 collections-extended>=2.0.2
 
+# Database dependencies for Knowledge Base
+sqlalchemy>=2.0.0
+alembic>=1.12.0
+
 # Future AI/ML dependencies (for next phases)
 # sentence-transformers>=2.2.0
 # transformers>=4.21.0

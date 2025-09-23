@@ -1,5 +1,9 @@
-Xây dựng Agent AI. Hỏi đáp về quyết định Thi hành án của toàn án. Dữ liệu đầu vào để train Agent AI là các quyết định Thi hành án của toàn án.
-Các quyết định này là file scan pdf.
+# THADS AI Agent
+
+**Hệ thống AI Agent thông minh cho Thi hành án Dân sự**
+
+Xây dựng Agent AI hỏi đáp về quyết định Thi hành án của toàn án. Dữ liệu đầu vào để train Agent AI là các quyết định Thi hành án của toàn án.
+Các quyết định này là file scan PDF được xử lý thông qua OCR và phân tích ngữ nghĩa.
 
 ## 📋 Kế Hoạch Chi Tiết Xây Dựng AI Agent Hỏi Đáp
 
@@ -26,12 +30,14 @@ Task 2.1: Thiết kế cơ sở dữ liệu
 - 📝 Thiết kế schema cho documents, chunks, embeddings
 - 📝 Tạo bảng metadata cho quyết định thi hành án
 - 📝 Thiết kế index cho tìm kiếm nhanh
-  Task 2.2: Text Chunking và Embedding
+
+Task 2.2: Text Chunking và Embedding
 
 - 📝 Chia văn bản thành chunks phù hợp
 - 📝 Tạo embeddings cho từng chunk
 - 📝 Lưu trữ embeddings vào vector database
-  Task 2.3: Semantic Search
+
+Task 2.3: Semantic Search
 
 - 📝 Xây dựng hệ thống tìm kiếm semantic
 - 📝 Implement similarity search
