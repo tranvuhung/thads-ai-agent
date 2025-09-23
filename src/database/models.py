@@ -399,3 +399,135 @@ class ProcessingLog(Base):
     
     # Relationship
     document = relationship("Document", backref="processing_logs")
+
+
+class ChunkingStrategy(enum.Enum):
+    """Strategies for text chunking"""
+    SENTENCE = "sentence"
+    PARAGRAPH = "paragraph"
+    FIXED_SIZE = "fixed_size"
+    SEMANTIC = "semantic"
+    LEGAL_SECTION = "legal_section"
+
+
+class TextChunk(Base):
+    """Model for storing text chunks from documents"""
+    __tablename__ = 'text_chunks'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    document_id = Column(Integer, ForeignKey('documents.id'), nullable=False)
+    
+    # Chunk content and metadata
+    content = Column(Text, nullable=False)
+    chunk_index = Column(Integer, nullable=False)  # Order within document
+    chunk_size = Column(Integer)  # Character count
+    word_count = Column(Integer)
+    sentence_count = Column(Integer)
+    
+    # Chunking strategy and parameters
+    chunking_strategy = Column(Enum(ChunkingStrategy), nullable=False)
+    chunk_overlap = Column(Integer, default=0)  # Overlap with adjacent chunks
+    
+    # Position information
+    start_position = Column(Integer)  # Character position in original text
+    end_position = Column(Integer)
+    page_number = Column(Integer)  # If applicable
+    
+    # Content type and context
+    content_type = Column(String(100))  # 'header', 'body', 'footer', 'table', etc.
+    section_title = Column(String(500))  # Legal section title if applicable
+    
+    # Quality metrics
+    coherence_score = Column(Float, default=0.0)  # Semantic coherence
+    completeness_score = Column(Float, default=0.0)  # Sentence/paragraph completeness
+    
+    # Timestamps
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    
+    # Relationships
+    document = relationship("Document", backref="text_chunks")
+    embeddings = relationship("ChunkEmbedding", back_populates="chunk", cascade="all, delete-orphan")
+    
+    __table_args__ = (
+        Index('idx_document_chunk_index', 'document_id', 'chunk_index'),
+        Index('idx_chunking_strategy', 'chunking_strategy'),
+        Index('idx_content_type', 'content_type'),
+        Index('idx_coherence_score', 'coherence_score'),
+    )
+
+
+class EmbeddingModel(enum.Enum):
+    """Available embedding models"""
+    SENTENCE_TRANSFORMERS_MULTILINGUAL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    SENTENCE_TRANSFORMERS_VIETNAMESE = "sentence-transformers/distiluse-base-multilingual-cased"
+    OPENAI_ADA_002 = "text-embedding-ada-002"
+    CUSTOM_VIETNAMESE = "custom-vietnamese-legal"
+
+
+class ChunkEmbedding(Base):
+    """Model for storing embeddings of text chunks"""
+    __tablename__ = 'chunk_embeddings'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    chunk_id = Column(Integer, ForeignKey('text_chunks.id'), nullable=False)
+    
+    # Embedding information
+    embedding_model = Column(Enum(EmbeddingModel), nullable=False)
+    embedding_vector = Column(JSON, nullable=False)  # Store as JSON array
+    embedding_dimension = Column(Integer, nullable=False)
+    
+    # Model parameters
+    model_version = Column(String(100))
+    normalization_applied = Column(Boolean, default=True)
+    
+    # Quality metrics
+    embedding_quality_score = Column(Float, default=0.0)
+    
+    # Processing information
+    processing_time = Column(Float)  # Time to generate embedding
+    
+    # Timestamps
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    
+    # Relationships
+    chunk = relationship("TextChunk", back_populates="embeddings")
+    
+    __table_args__ = (
+        Index('idx_chunk_model', 'chunk_id', 'embedding_model'),
+        Index('idx_embedding_model', 'embedding_model'),
+        Index('idx_embedding_dimension', 'embedding_dimension'),
+    )
+
+
+class VectorSearchIndex(Base):
+    """Model for vector similarity search optimization"""
+    __tablename__ = 'vector_search_index'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    embedding_id = Column(Integer, ForeignKey('chunk_embeddings.id'), nullable=False)
+    
+    # Search optimization
+    index_type = Column(String(50), default='flat')  # 'flat', 'ivf', 'hnsw'
+    index_parameters = Column(JSON)  # Store index-specific parameters
+    
+    # Clustering information for faster search
+    cluster_id = Column(Integer)
+    cluster_centroid = Column(JSON)  # Cluster center vector
+    
+    # Search performance metrics
+    average_search_time = Column(Float)
+    search_accuracy = Column(Float)
+    
+    # Timestamps
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    
+    # Relationships
+    embedding = relationship("ChunkEmbedding", backref="search_indices")
+    
+    __table_args__ = (
+        Index('idx_embedding_index_type', 'embedding_id', 'index_type'),
+        Index('idx_cluster_id', 'cluster_id'),
+    )

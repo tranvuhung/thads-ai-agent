@@ -1,0 +1,58 @@
+{
+  "document_info": {
+    "path": "docs/pdf_input/BA 311.2025.HS.ST.pdf",
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Pdftools SDK",
+      "creationDate": "",
+      "modDate": "D:20250726080204Z",
+      "trapped": "",
+      "encryption": null
+    },
+    "total_pages": 5
+  },
+  "content": {
+    "raw_pages": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "normalized_pages": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "text_positions": [
+      {
+        "page_num": 1,
+        "blocks": []
+      },
+      {
+        "page_num": 2,
+        "blocks": []
+      },
+      {
+        "page_num": 3,
+        "blocks": []
+      },
+      {
+        "page_num": 4,
+        "blocks": []
+      },
+      {
+        "page_num": 5,
+        "blocks": []
+      }
+    ],
+    "extracted_images": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "document_info": {
+    "document_type": "Văn bản pháp lý",
+    "case_number": "",
+    "court_name": "",
+    "date_issued": null,
+    "parties": {
+      "defendants": [],
+      "plaintiffs": [],
+      "prosecutors": [],
+      "judges": []
+    },
+    "charges": [],
+    "verdict": null,
+    "sentence": null,
+    "legal_references": [],
+    "key_facts": []
+  },
+  "processing_timestamp": "2025-09-23T13:39:15.830510",
+  "confidence_score": 0.0
+}

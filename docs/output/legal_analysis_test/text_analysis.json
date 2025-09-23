@@ -1,0 +1,117 @@
+{
+  "document_structure": {
+    "total_lines": 1,
+    "sections": [],
+    "subsections": [],
+    "hierarchy_depth": 0,
+    "has_legal_citations": true,
+    "section_types": {}
+  },
+  "legal_terminology": {
+    "court_terms": {
+      "tòa án": 4,
+      "thẩm phán": 1,
+      "hội thẩm": 1,
+      "kiểm sát viên": 1,
+      "bị cáo": 16
+    },
+    "procedure_terms": {
+      "tố tụng": 5,
+      "xét xử": 6,
+      "điều tra": 3,
+      "truy tố": 2,
+      "kháng cáo": 5,
+      "phiên tòa": 8,
+      "biên bản": 3,
+      "quyết định": 4,
+      "bản án": 4
+    },
+    "criminal_terms": {
+      "tội phạm": 1,
+      "hình phạt": 6,
+      "tịch thu": 3,
+      "tái phạm": 1,
+      "tình tiết giảm nhẹ": 2
+    },
+    "civil_terms": {
+      "nghĩa vụ": 4,
+      "thiệt hại": 1,
+      "tài sản": 2
+    },
+    "legal_references": {
+      "bộ luật": 15,
+      "luật": 18,
+      "quyết định": 4,
+      "điều": 23,
+      "khoản": 10,
+      "điểm": 9,
+      "phần": 1
+    }
+  },
+  "complexity_metrics": {
+    "average_sentence_length": 34.7972972972973,
+    "average_word_length": 3.30252427184466,
+    "legal_term_density": 0.0633009708737864,
+    "citation_density": 1.1650485436893203,
+    "total_words": 2575,
+    "total_sentences": 74,
+    "total_characters": 11501
+  },
+  "readability_score": 31.805825242718456,
+  "key_sections": [],
+  "legal_citations": [
+    "Điều 38",
+    "luật Tố tụng hình sự, Hội đẳng xét xử xét xử vắng mặt người có quyền lợi nghĩa vụ liên quan. Tại phiền tòa, bị cáo không có ý kiến hoặc khiếu nại gì về hành vi, quyết định tổ tụng của Cơ quan tiến bành tố tụng, người tiến hành tế tụng và đồng ý với kết luận giám định. Do đó, các hành vi, quyết định tố tựng của Cơ quan tiến hành tố tụng, người tiến hành tố tụng đã thực hiện đều đúng pháp luật. [2] Xét lời khai nhận tội của bị cáo Huỳnh Thị Tuyết tại phiên tòa là phù hợp nội dưng: Biên bản bắt người phạm tội quả tang lập ngày 31/10/2023",
+    "luật và nhận định của Hội đồng xét xử nên được chấp thuận. 3 [s] Đối với Võ Hải HA không biết và không tham gia với Tuyết trong việc tàng trữ trái phép chất ma túy nên không xử lý hình sự đối với Hồ là có căn cứ. Đối với người đàn ông bén ma túy cho Huỳnh Thị Tuyết, không rõ lai lịch nên đề nghị Cơ quan Cảnh sát Điều tra Đức tiếp tục xác minh làm rõ. [6] Căn cứ Điều 47 Bộ luật Hình sự năm 2015",
+    "luật tố tung hình sự, Nghị quyết số 326/2016",
+    "Điều 333",
+    "Điều 52",
+    "Điều 106",
+    "quyết định tổ tụng của Cơ quan tiến bành tố tụng, người tiến hành tế tụng và đồng ý với kết luận giám định. Do đó, các hành vi, quyết định tố tựng của Cơ quan tiến hành tố tụng, người tiến hành tố tụng đã thực hiện đều đúng pháp luật. [2] Xét lời khai nhận tội của bị cáo Huỳnh Thị Tuyết tại phiên tòa là phù hợp nội dưng: Biên bản bắt người phạm tội quả tang lập ngày 31/10/2023",
+    "Điều 51",
+    "Bộ luật Tố tụng hình sự, Hội đẳng xét xử xét xử vắng mặt người có quyền lợi nghĩa vụ liên quan. Tại phiền tòa, bị cáo không có ý kiến hoặc khiếu nại gì về hành vi, quyết định tổ tụng của Cơ quan tiến bành tố tụng, người tiến hành tế tụng và đồng ý với kết luận giám định. Do đó, các hành vi, quyết định tố tựng của Cơ quan tiến hành tố tụng, người tiến hành tố tụng đã thực hiện đều đúng pháp luật. [2] Xét lời khai nhận tội của bị cáo Huỳnh Thị Tuyết tại phiên tòa là phù hợp nội dưng: Biên bản bắt người phạm tội quả tang lập ngày 31/10/2023",
+    "Điều 135",
+    "quyết định hình phạt, căn cứ Điều 50 Bộ luật Hình sự năm 2015 sửa đổi bd sung năm 2017, cần áp dung Điểm c Khoản I Điều 249 Bộ luật Hình sự năm 2015 sửa đổi hẳ sung năm 2017 quy định khưng hình phạt phải ứp dụng, Điểm s Khoản I Điều 51 Bộ luật Hình sự năm 2015 sửa đổi bổ sung năm 2017 quy định các tình tiết giảm nhẹ trách nhiệm hình sự, Điểm h Khoản I Điều 52 Bộ luật Hình sự năm 2015 sửa đổi bd sưng năm 2017 quy định tình tiết ting nặng trách nhiệm hình sự “tái phạm”, có hình phạt th trong xứng với tinh chất, mức độ phạm tội, nhân thân và các tình tiết giảm nhẹ, tăng nặng trách nhiệm hình sự của bị cáo thì mới có tác dựng cải tạo giáo dục riêng và phòng ngừa chưng cho xã hội. [4] Xét đề nghị của Vị đại diện Viện kiểm sét nhân đân thành phố Thủ Đức là phủ hợp với các tinh tiết của vụ din, các quy định của pháp luật và nhận định của Hội đồng xét xử nên được chấp thuận. 3 [s] Đối với Võ Hải HA không biết và không tham gia với Tuyết trong việc tàng trữ trái phép chất ma túy nên không xử lý hình sự đối với Hồ là có căn cứ. Đối với người đàn ông bén ma túy cho Huỳnh Thị Tuyết, không rõ lai lịch nên đề nghị Cơ quan Cảnh sát Điều tra Đức tiếp tục xác minh làm rõ. [6] Căn cứ Điều 47 Bộ luật Hình sự năm 2015 sửa đổi, bd sưng năm 2017 và Điều 106 Bộ luật TẾ tụng hình sự năm 2015, xét: - 01 gởi nylon hàn kín bên trong chứa tinh thể không màu, đã được niêm phong bên ngoài có chữ ký ghi tên Huỳnh Thị Tuyết và hình dấu Công an phường Thạnh Mỹ Lợi, Thanh phố Thủ Đức, Thành phố Hồ Chí Minh. Khối lượng ma túy còn lại sau giám định là o, 4174g. Là tang vật ma tủy còn lại sau giám định, Nha nước chm lưu hành nên tịch thu và tiên hủy. - 81 điện thoại di động hiệu Samsung, Galaxy J7, màu hồng thu giữ của Huỳnh Thị Tuyết, không liên quan đến hành vi phạm tội nên cần hoàn trả lại cho bị cáo. - 01 bớp da mau den thu giữ của Huynh Thị Tuyết, không còn giá trị sử dung nên cần tịch tho tiêu hủy. [6]. Về án phí: Bị cáo phải chịu án phí hình sự sơ thẳm theo quy định. [7]. Về quyền kháng cáo: Bị cáo và người có quyển lợi nghĩa vụ liên quan có quyền kháng cáo bản án theo quy định. Vi các Uf rên, QUYẾT ĐỊNH: I. Căn cứ Điểu 249 Bộ luật Hình sự năm 2015 sửa đổi, bổ sung năm 2017. Tuyên bố bị cáo Huỳnh Thị Tuyết phạm tội “Tăng trữ trái phép chất ma túy”. 2. Ap dựng: Điểm c Khoản | Điểu 249; Điểm s Khoản I Điều 51, Điểm h Khoản I Điều 52; Điều 50; Điều 38 Bộ luật Hình sự năm 2015 sửa đổi, bd sung năm 2017. Xử phạt bị cáo Huỳnh Thị Tuyết 02 ( hai) năm 6 ( sáu) tháng tù. Thời hạn tủ tính từ ngày 31/10/2023",
+    "Điều 47",
+    "luật TẾ tụng hình sự năm 2015",
+    "Bộ luật TẾ tụng hình sự năm 2015",
+    "Bộ luật tố tung hình sự, Nghị quyết số 326/2016",
+    "Điều 50",
+    "luật Hình sự năm 2015",
+    "Điều 331",
+    "Bộ luật Hình sự năm 2015",
+    "Điều 136",
+    "Điều 249",
+    "Điều 292",
+    "luật nghiêm cắm và tii phạm tội, Trong vụ án nảy, hành vi tăng trữ trái phép o, 5178"
+  ],
+  "entities": {
+    "persons": [
+      "Võ Hải H",
+      "Trần Minh Nhật",
+      "Nguyễn Xuân Ting",
+      "Nguyễn Huynh Liên"
+    ],
+    "organizations": [
+      "Ủy ban Thường vụ Quốc hội quy định về mức thu",
+      "Cơ quan Cảnh sát Điều tra Đức tiếp tục xác minh làm rõ"
+    ],
+    "locations": [],
+    "dates": [
+      "30/12/2016",
+      "17/01/2017",
+      "14/01/2025",
+      "31/10/2023",
+      "09/11/2023",
+      "25/10/2023",
+      "16/7/2024"
+    ],
+    "amounts": [],
+    "case_numbers": [
+      "326/2016/UBTVQH",
+      "231/2025/HSST",
+      "304/2025/QDXXST-HS",
+      "311/2025/HS-ST"
+    ]
+  }
+}

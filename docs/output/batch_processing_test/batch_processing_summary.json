@@ -1,0 +1,89 @@
+{
+  "total_files": 1,
+  "successful": 1,
+  "failed": 0,
+  "processing_timestamp": "2025-09-23T13:39:15.830683",
+  "results": [
+    {
+      "document_info": {
+        "path": "docs/pdf_input/BA 311.2025.HS.ST.pdf",
+        "metadata": {
+          "format": "PDF 1.4",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "",
+          "producer": "Pdftools SDK",
+          "creationDate": "",
+          "modDate": "D:20250726080204Z",
+          "trapped": "",
+          "encryption": null
+        },
+        "total_pages": 5
+      },
+      "content": {
+        "raw_pages": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "normalized_pages": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "text_positions": [
+          {
+            "page_num": 1,
+            "blocks": []
+          },
+          {
+            "page_num": 2,
+            "blocks": []
+          },
+          {
+            "page_num": 3,
+            "blocks": []
+          },
+          {
+            "page_num": 4,
+            "blocks": []
+          },
+          {
+            "page_num": 5,
+            "blocks": []
+          }
+        ],
+        "extracted_images": []
+      },
+      "legal_analysis": {
+        "document_info": {
+          "document_type": "Văn bản pháp lý",
+          "case_number": "",
+          "court_name": "",
+          "date_issued": null,
+          "parties": {
+            "defendants": [],
+            "plaintiffs": [],
+            "prosecutors": [],
+            "judges": []
+          },
+          "charges": [],
+          "verdict": null,
+          "sentence": null,
+          "legal_references": [],
+          "key_facts": []
+        },
+        "processing_timestamp": "2025-09-23T13:39:15.830510",
+        "confidence_score": 0.0
+      },
+      "source_file": "docs/pdf_input/BA 311.2025.HS.ST.pdf",
+      "processing_index": 1
+    }
+  ]
+}
