@@ -19,23 +19,23 @@ Task 1.1: Hoàn thiện hệ thống xử lý PDF
 
 Task 1.2: Xây dựng pipeline xử lý batch PDF
 
-- 📝 Tạo module xử lý nhiều file PDF cùng lúc
-- 📝 Lưu trữ dữ liệu đã xử lý vào database
-- 📝 Tạo metadata cho từng document
+- Tạo module xử lý nhiều file PDF cùng lúc
+- Lưu trữ dữ liệu đã xử lý vào database
+- Tạo metadata cho từng document
 
 ### Giai đoạn 2: Xây dựng Knowledge Base
 
 Task 2.1: Thiết kế cơ sở dữ liệu
 
-- 📝 Thiết kế schema cho documents, chunks, embeddings
-- 📝 Tạo bảng metadata cho quyết định thi hành án
-- 📝 Thiết kế index cho tìm kiếm nhanh
+- Thiết kế schema cho documents, chunks, embeddings
+- Tạo bảng metadata cho quyết định thi hành án
+- Thiết kế index cho tìm kiếm nhanh
 
 Task 2.2: Text Chunking và Embedding
 
-- 📝 Chia văn bản thành chunks phù hợp
-- 📝 Tạo embeddings cho từng chunk
-- 📝 Lưu trữ embeddings vào vector database
+- Chia văn bản thành chunks phù hợp
+- Tạo embeddings cho từng chunk
+- Lưu trữ embeddings vào vector database
 
 Task 2.3: Semantic Search
 
@@ -47,46 +47,47 @@ Task 2.3: Semantic Search
 
 Task 3.1: LLM Integration
 
-- 📝 Tích hợp LLM (OpenAI GPT, Claude, hoặc local model)
-- 📝 Thiết kế prompt templates cho domain pháp lý
-- 📝 Context management và memory
-  Task 3.2: RAG (Retrieval-Augmented Generation)
+- Tích hợp LLM (OpenAI GPT, Claude, hoặc local model)
+- Thiết kế prompt templates cho domain pháp lý
+- Context management và memory
 
-- 📝 Kết hợp retrieval với generation
-- 📝 Context filtering và ranking
-- 📝 Answer synthesis và citation
+Task 3.2: RAG (Retrieval-Augmented Generation)
+
+- Kết hợp retrieval với generation
+- Context filtering và ranking
+- Answer synthesis và citation
   Task 3.3: Agent Logic
 
-- 📝 Query understanding và intent detection
-- 📝 Multi-step reasoning
-- 📝 Answer validation và fact-checking
+- Query understanding và intent detection
+- Multi-step reasoning
+- Answer validation và fact-checking
 
 ### Giai đoạn 4: API và Interface
 
 Task 4.1: REST API
 
-- 📝 Endpoint cho upload PDF
-- 📝 Endpoint cho chat/Q&A
-- 📝 Endpoint cho search documents
-- 📝 Authentication và rate limiting
+- Endpoint cho upload PDF
+- Endpoint cho chat/Q&A
+- Endpoint cho search documents
+- Authentication và rate limiting
   Task 4.2: Web Interface
 
-- 📝 Upload interface cho PDF
-- 📝 Chat interface
-- 📝 Document viewer
-- 📝 Admin dashboard
+- Upload interface cho PDF
+- Chat interface
+- Document viewer
+- Admin dashboard
 
 ### Giai đoạn 5: Testing và Optimization
 
 Task 5.1: Testing
 
-- 📝 Unit tests cho các components
-- 📝 Integration tests
-- 📝 Performance testing
-- 📝 Accuracy evaluation
+- Unit tests cho các components
+- Integration tests
+- Performance testing
+- Accuracy evaluation
   Task 5.2: Optimization
 
-- 📝 Response time optimization
-- 📝 Memory usage optimization
-- 📝 Caching strategies
-- 📝 Model fine-tuning
+- Response time optimization
+- Memory usage optimization
+- Caching strategies
+- Model fine-tuning
