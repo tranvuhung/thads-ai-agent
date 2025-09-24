@@ -1,0 +1,67 @@
+# Test Requirements for Semantic Search System
+# Install with: pip install -r requirements-test.txt
+
+# Core testing framework
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.1
+pytest-asyncio>=0.21.1
+pytest-benchmark>=4.0.0
+pytest-xdist>=3.3.1
+
+# Test utilities
+unittest-xml-reporting>=3.2.0
+coverage>=7.2.7
+mock>=5.1.0
+factory-boy>=3.3.0
+faker>=19.3.0
+
+# Performance testing
+memory-profiler>=0.61.0
+psutil>=5.9.5
+line-profiler>=4.1.1
+
+# Data manipulation for tests
+numpy>=1.24.3
+pandas>=2.0.3
+scipy>=1.11.1
+
+# Machine learning libraries for testing
+scikit-learn>=1.3.0
+faiss-cpu>=1.7.4
+annoy>=1.17.3
+
+# Text processing for tests
+nltk>=3.8.1
+spacy>=3.6.1
+textblob>=0.17.1
+
+# Vector database testing
+chromadb>=0.4.6
+pinecone-client>=2.2.2
+weaviate-client>=3.22.1
+
+# Embedding models for testing
+sentence-transformers>=2.2.2
+transformers>=4.32.1
+torch>=2.0.1
+
+# Caching and storage for tests
+redis>=4.6.0
+diskcache>=5.6.3
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+requests>=2.31.0
+tqdm>=4.65.0
+
+# Development tools
+black>=23.7.0
+flake8>=6.0.0
+isort>=5.12.0
+mypy>=1.5.1
+
+# Documentation testing
+sphinx>=7.1.2
+sphinx-rtd-theme>=1.3.0

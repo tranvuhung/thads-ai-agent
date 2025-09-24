@@ -39,9 +39,9 @@ Task 2.2: Text Chunking và Embedding
 
 Task 2.3: Semantic Search
 
-- 📝 Xây dựng hệ thống tìm kiếm semantic
-- 📝 Implement similarity search
-- 📝 Ranking và filtering results
+- Xây dựng hệ thống tìm kiếm semantic
+- Implement similarity search
+- Ranking và filtering results
 
 ### Giai đoạn 3: Xây dựng AI Agent Core
 
